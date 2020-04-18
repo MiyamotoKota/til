@@ -13,3 +13,12 @@
 
 これで、コマンドプロンプトから「jupyter notebook」が実行できる
 
+## jupyter notebook のデフォルト参照先の変更
+```
+jupyter notebook --generate-config
+```
+を実行する。
+
+作成された、jupyter_notebook_config.pyを開き、
+#c.NotebookApp.notebook_dir = ''
+を探して、そこに変更後のパスを指定
